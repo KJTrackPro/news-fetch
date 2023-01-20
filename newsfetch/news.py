@@ -139,3 +139,15 @@ class newspaper:
                                                'title_page': self.title_page,
                                                'title_rss': self.title_rss,
                                                'url': self.uri})
+
+
+    def __str__(self) -> str:
+        return f"""
+        Headline: {self.headline}\n 
+        Source: {self.publication}\n
+        Authors: {self.authors}\n 
+        Date: {self.date_publish}\n 
+        Description: {self.description}\n 
+        Summary: {self.summary}\n 
+        Source Domain: {self.source_domain}\n
+        """

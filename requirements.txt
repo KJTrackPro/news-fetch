@@ -1,5 +1,5 @@
 beautifulsoup4
-selenium
+selenium==4.2.0
 chromedriver-binary
 pandas
 pattern
@@ -7,3 +7,5 @@ fake_useragent
 setuptools
 twine
 unidecode
+newspaper3k
+news-please

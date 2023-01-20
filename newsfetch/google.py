@@ -34,8 +34,7 @@ class google_search:
 
             if len(driver.find_elements_by_xpath('//div[@id="result-stats"]')) != 0:
 
-                results = driver.find_elements_by_xpath(
-                    '//div[@id="result-stats"]')[0].text
+                results = driver.find_elements_by_xpath('//div[@id="result-stats"]')[0].text
                 results = results[:results.find('results')]
                 max_pages = round(
                     int(int(''.join(i for i in results if i.isdigit())) / 10))

@@ -14,4 +14,5 @@ from newspaper import Article
 from newsplease import NewsPlease
 from requests import get
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options

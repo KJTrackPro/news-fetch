@@ -1,4 +1,5 @@
-from newsfetch.utils import chromedriver_binary, json, pd, unidecode, webdriver
+from newsfetch.utils import chromedriver_binary, json, pd, unidecode, webdriver, ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 
 """
 The Below functions contains error handling, unidecode, digits extraction, dataframe cleaning
@@ -31,7 +32,7 @@ def dataframe_data(df):
 
 
 def get_chrome_web_driver(options):
-    return webdriver.Chrome(chrome_options=options)
+    return webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), chrome_options=options)
 
 
 def get_web_driver_options():
